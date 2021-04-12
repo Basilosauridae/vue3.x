@@ -1,19 +1,24 @@
+// toRaw 获取ref/reactive的原始数据 直接更改原始数据 阻止页面响应式更新
 <template>
   <div>
-    <!-- <p>{{obj}}</p> -->
+    <p>{{obj1}}</p>
     <p>{{state}}</p>
     <button @click="fn">按钮</button>
   </div>
 </template>
 
 <script>
-import {reactive,toRaw} from 'vue'
+import {reactive,toRaw,ref} from 'vue'
 export default {
   name:'ToRaw',
   setup(){
     let obj = {name:'hy',age:18}
+   
     let state = reactive(obj) // 4.state的取值根据对obj地址的引用 obj原始值一旦修改 state就无法找到正确的内存地址
     let obj2 = toRaw(state)
+
+    let obj1 = ref({name:'zs',age:20}) 
+    let obj3 = toRaw(obj1.value) //6.在ref类型中 要告诉toRaw获取的是.value的值
 
     function fn() {
       obj.name = 'ls'  
@@ -27,9 +32,14 @@ export default {
       // 5.toRaw的引用如下
       obj2.name = 'ww'
       console.log( obj2 ) //{name: "ww", age: 18} 修改了原始值后无法实现响应式更新
+
+      obj3.name = '叽里咕噜'//6,ref获取到原始数据类型修改 对响应式不生效
+      console.log( obj3,111 );
+
+      
     }
 
-    return{obj,state,fn}
+    return{obj1,state,fn}
   }
 }
 </script>
