@@ -12,7 +12,8 @@
   <!-- <toRefs/> -->
   <!-- <customRef/> -->
   <!-- <reason/> -->
-  <getValue/>
+  <!-- <getValue/> -->
+  <readonly/>
 
 </template>
 
@@ -31,6 +32,7 @@ import ToRefs from './components/11.toRefs.vue'
 import CustomRef from './components/12.cutomRef.vue'
 import Reason from './components/13.reason.vue'
 import GetValue from './components/14.getValue.vue'
+import Readonly from './components/15.readonly.vue'
 
 export default {
   name: 'App',
@@ -48,7 +50,8 @@ export default {
     ToRefs,
     CustomRef,
     Reason,
-    GetValue
+    GetValue,
+    Readonly
   }
 }
 </script>
