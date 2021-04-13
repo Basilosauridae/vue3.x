@@ -9,7 +9,8 @@
   <!-- <toRaw/> -->
   <!-- <markRaw/>-->
   <!-- <toRef/> -->
-  <toRefs/>
+  <!-- <toRefs/> -->
+  <customRef/>
 
 </template>
 
@@ -25,6 +26,7 @@ import ToRaw from './components/08.roRaw.vue'
 import MarkRaw from './components/09.markRaw.vue'
 import ToRef from './components/10.ToRef.vue'
 import ToRefs from './components/11.toRefs.vue'
+import CustomRef from './components/12.cutomRef.vue'
 
 export default {
   name: 'App',
@@ -39,7 +41,8 @@ export default {
     ToRaw,
     MarkRaw,
     ToRef,
-    ToRefs
+    ToRefs,
+    CustomRef
   }
 }
 </script>
