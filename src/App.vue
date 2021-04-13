@@ -8,7 +8,8 @@
   <!-- <nonrecursion-listening/> -->
   <!-- <toRaw/> -->
   <!-- <markRaw/>-->
-  <toRef/>
+  <!-- <toRef/> -->
+  <toRefs/>
 
 </template>
 
@@ -23,6 +24,7 @@ import NonrecursionListening from './components/07.nonrecursion-listening.vue'
 import ToRaw from './components/08.roRaw.vue'
 import MarkRaw from './components/09.markRaw.vue'
 import ToRef from './components/10.ToRef.vue'
+import ToRefs from './components/11.toRefs.vue'
 
 export default {
   name: 'App',
@@ -36,7 +38,8 @@ export default {
     NonrecursionListening,
     ToRaw,
     MarkRaw,
-    ToRef
+    ToRef,
+    ToRefs
   }
 }
 </script>
