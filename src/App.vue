@@ -11,7 +11,8 @@
   <!-- <toRef/> -->
   <!-- <toRefs/> -->
   <!-- <customRef/> -->
-  <reason/>
+  <!-- <reason/> -->
+  <getValue/>
 
 </template>
 
@@ -29,6 +30,7 @@ import ToRef from './components/10.ToRef.vue'
 import ToRefs from './components/11.toRefs.vue'
 import CustomRef from './components/12.cutomRef.vue'
 import Reason from './components/13.reason.vue'
+import GetValue from './components/14.getValue.vue'
 
 export default {
   name: 'App',
@@ -45,7 +47,8 @@ export default {
     ToRef,
     ToRefs,
     CustomRef,
-    Reason
+    Reason,
+    GetValue
   }
 }
 </script>
