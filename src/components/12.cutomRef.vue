@@ -41,7 +41,6 @@ export default {
     function fn() {
       age.value += 1
     }
-
     return{age,fn}
   }
 }
@@ -60,6 +59,3 @@ export default {
 }*/
 </script>
 
-<style>
-
-</style>
