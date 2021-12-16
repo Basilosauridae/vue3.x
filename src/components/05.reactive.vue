@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div>
     <p>{{state.time}}</p>
     <button @click="myFn">按钮</button>
@@ -17,7 +17,7 @@ export default {
     // let state = reactive({num:8})
     // let state = reactive([1,2,3])
 
-    // 传递的非对象和数组，直接修改对象无效 需要重新赋值
+    // 传递的非对象和数组，直接修改对象无效 需要重新赋值  
     let state = reactive({
       time:new Date()
     })

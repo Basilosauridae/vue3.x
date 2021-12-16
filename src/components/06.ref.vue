@@ -31,7 +31,10 @@ export default {
     })
     function Fn() {
       // msg = 666
-      // console.log( msg ) //ref传参在vue中获取值不需要.value,控制台可在msg=666情况下打印666
+      /* 不使用ref赋值 vue3就无法实现响应式
+         使用ref赋值的打印出来 是一个RefImpl{..} reference implement 引用实现对象
+      */
+      // console.log( msg ) //ref传参在vue中获取值不需要.value,控制台可在msg=666情况下打印666 
 
       msg.value = 666 //ref传参在JS中需要.value，因为底层还是reactive，需要对对象的键值名重新赋值
       console.log( isRef(msg) ) //true 判断当前数据为ref类型

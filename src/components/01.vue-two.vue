@@ -1,15 +1,14 @@
 // vue2实现的功能
 <template>
-  <div class="vue-two">
-    <input type="text" v-model="stu.id">
-    <input type="text" v-model="stu.name">
-    <input type="text" v-model="stu.age">
-    <input type="submit" @click="addStu">
+  <!-- Vue3中的模板结构可以没有根标签 -->
+  <input type="text" v-model="stu.id">
+  <input type="text" v-model="stu.name">
+  <input type="text" v-model="stu.age">
+  <input type="submit" @click="addStu">
 
-    <ul>
-      <li v-for="(item,index) in stus" :key="item.id" @click="delStu(index)">{{item.name}}-{{item.age}}</li>
-    </ul>
-  </div>
+  <ul>
+    <li v-for="(item,index) in stus" :key="item.id" @click="delStu(index)">{{item.name}}-{{item.age}}</li>
+  </ul>
 </template>
 
 <script>

@@ -3,7 +3,7 @@
   <!-- <VueThree/> -->
   <!-- <Understand/> -->
   <!-- <set-up/> -->
-  <!-- <reactive/> -->
+  <reactive/>
   <!-- <ref/> -->
   <!-- <nonrecursion-listening/> -->
   <!-- <toRaw/> -->
@@ -13,7 +13,7 @@
   <!-- <customRef/> -->
   <!-- <reason/> -->
   <!-- <getValue/> -->
-  <readonly/>
+  <!-- <readonly/> -->
 
 </template>
 
